@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body class="is-preload" >
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner" style="text-align:center">
+
+				<!-- Logo -->
+				<a href="inicial.html" class="logo">
+					<span class="symbol" ><img src="images/logo.svg" alt="" /></span><span class="title">Escola de
+						Prodígios</span>
+				</a>
+
+			</div>
+		</header>
+
+		<!-- Main -->
+		<form action="https://631143c519eb631f9d6fe864.mockapi.io/Alunos" method="post">
+			<div id="main" style="text-align:center">
+				<div class="inner">
+					<h1>Matrículas</h1>
+
+					<!--div class="fields">
+						<div class="field half">
+							<label>Nome:</label>
+							<input type="text" name="nome" id="nome" required>
+						</div>
+						<div>
+							<label>Sobrenome:</label>
+							<input type="text" name="sobrenome" id="sobrenome" required>
+						</div>
+					</div>
+
+					<br>
+					<br>
+
+					<div>
+						<label>Endereço</label>
+						<label>Bairro:</label>
+						<input type="text" name="bairro" id="bairro" required>
+						<label>Cidade:</label>
+						<input type="text" name="cidade" id="cidade" required>
+						<label>Número:</label>
+						<input type="number" name="numero" id="numero" required>.
+						<label>CEP:</label>
+						<input type="number" name="CEP" id="CEP" required>
+					</div>
+				</div>-->
+				<h3>Informações do aluno:</h3>
+					<label style="text-align:left">Nome do aluno:</label>
+					<div class="col-6 col-12-mobile"><input type="text" name="nome-aluno"
+							placeholder="Digite um nome..."></div>
+					<br>
+					<br>
+					<label style="text-align:left">Endereço:</label>
+					<div class="col-6 col-12-mobile"><input type="text" name="endereco-aluno"
+							placeholder="Digite o Endereco..." style="text-align:left"></div>
+					<div class="col-6 col-12-mobile"><input type="text" class="form" name="bairro-aluno"
+							placeholder="Digite o Bairro..."></div>
+					<div class="col-6 col-12-mobile"><input type="text" class="form" name="cidade-aluno"
+							placeholder="Digite a Cidade..."></div>
+					<div class="col-6 col-12-mobile"><input type="text" class="form" name="numero-aluno"
+							placeholder="Digite o numero de residência..."></div>
+					<div class="col-6 col-12-mobile"><input type="text" class="form" pattern="[0-9]{5}-[0-9]{3}"
+							title="Digite o Cep no formato: 99999-999" name="cep-aluno" placeholder="Digite o cep...">
+					</div>
+					<div class="col-6 col-12-mobile"><input type="text" class="form" name="complemento-aluno"
+							placeholder="Digite o Complemento..."></div>
+					<div class="col-6 col-12-mobile">
+						<select name="estado-aluno">
+							<option value="SP" selected>Selecione o Estado</option>
+							<option value="SP">SP</option>
+							<option value="RS">RJ</option>
+							<option value="PR">PR</option>
+							<option value="MG">MG</option>
+							<option value="AM">AM</option>
+							<option value="AC">AC</option>
+							<option value="MA">MA</option>
+							<option value="BA">BA</option>
+						</select>
+					</div>
+					<br>
+					<br>
+					<label style="text-align:left">Sobre o aluno:</label>
+					<div class="col-6 col-12-mobile"><input type="text" class="form" name="telefone-aluno"
+							placeholder="Digite o telefone..."></div>
+					<div class="col-6 col-12-mobile"><input type="text" class="form" name="celular-aluno"
+							placeholder="Digite o celular..."></div>
+					<div class="col-6 col-12-mobile"><input type="text" class="form" name="email-aluno"
+							placeholder="Digite o email..."></div>
+				
+					<div class="col-6 col-12-mobile">
+						<select name="cor-aluno">
+							<option value="nao-informar" selected>Selecione a etnia...</option>
+							<option value="branco">Branco</option>
+							<option value="preto">Preta</option>
+							<option value="pardo">Pardo</option>
+							<option value="amarelo">Amarelo</option>
+							<option value="indigena">Indigena</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="separador"></div>
+
+				<br>
+				<br>
+				<header>
+					<h3>Informações dos Pais</h3>
+					<h4 style="text-align:left">Pai:</h4>
+				</header>
+
+				<div class="inner">
+
+				
+						<div class="col-6 col-12-mobile"><input type="text" name="nome-pai"
+								placeholder="Digite o nome do pai..."></div> 
+					<label style="text-align:left"></label> 
+							<div class="col-6 col-12-mobile" style="text-align:left"><input type="date" name="dt-nasc-pai"
+							placeholder="Data de nascimento do pai...">
+					<div class="col-6 col-12-mobile"><input type="text" name="naturalidade-pai"
+							placeholder="Digite a naturalidade do pai..."></div>
+					<div class="col-6 col-12-mobile"><input type="text" name="profissao-pai"
+							placeholder="Digite a profissao do pai...">
+					<div class="col-6 col-12-mobile">
+						<select name="instrucao-pai">
+							<option value="Ensino Medio" selected>Selecione o Grau de Instrucao...</option>
+							<option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+							<option value="Ensino Fundamental Completo">Ensino Fundamental Completo</option>
+							<option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+							<option value="Ensino Medio Completo">Ensino Medio Completo</option>
+							<option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+							<option value="Ensino Superior">Ensino Superior</option>
+						</select>
+						<div class="col-6 col-12-mobile"><input type="text" name="celular-pai"
+								placeholder="Digite o Celular do Pai..."></div>
+						<div class="col-6 col-12-mobile"><input type="text" name="email-pai"
+								placeholder="Digite o email do Pai..."></div>
+						<div class="col-6 col-12-mobile"><input type="text" name="cpf-pai"
+								placeholder="Digite cpf do Pai..."></div>
+						<div class="col-6 col-12-mobile">
+							<label>O pai é o responsável financeiro?</label>
+							<input type="checkbox" id="paiResponsavel" value="Sim">
+							<label for="paiResponsavel">Sim</label>
+							<input type="checkbox" id="paiResponsavel" value="Nao">
+							<label for="paiResponsavel">Não</label>
+						</div>
+                        <br>
+
+
+					</div>
+
+					<div class="separador"></div>
+
+					<header>
+						<br><br><br><br><br>
+						<h3>Dados do Curso</h3>
+					</header>
+
+
+					<div class="">
+						<label>Nome do curso:</label>
+						<div class=""><input type="text" name="nome-curso"
+							placeholder="Digite o nome do Curso..."></div>
+							<div class="">
+								<br>
+								<label for="dt-ingresso">Data de ingresso:</label>
+								<input type="date" name="dt-ingresso">
+							</div>
+						<br>
+						<div class="">
+							<a href="email.html" class="btn btn-primary btn-lg">Matrícular</a>
+						</div>
+
+		</form>
+	</div>
+	</section>
+
+	</div>
+
+
+	</div>
+	</div>
+	</form>
+
+	
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
